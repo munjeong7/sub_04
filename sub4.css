@@ -1,0 +1,308 @@
+@charset "utf-8";
+html{scroll-behavior: smooth;
+	overflow-y: scroll;}/*탭메뉴 스무스컨트롤*/
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: black;}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    color: black;
+}
+
+/* 탑 */
+#top{
+    width: 1320px;
+    height: 38px;
+    margin: auto;
+}
+#top .link{
+    float: right;
+}
+#top .link li{
+    float: left;
+}
+#top .link a{
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 15px;
+}
+#top .link a:hover{
+    color: #1f512c;
+    font-weight: 700;
+}
+/* 탑아이콘 호버 시 아이콘 이미지 변경 */
+.link .link1 img:last-child{display:none;}
+.link .link1:hover img:first-child{display:none;}
+.link .link1:hover img:last-child{display:inline-block;}
+
+.link .link2 img:last-child{display:none;}
+.link .link2:hover img:first-child{display:none;}
+.link .link2:hover img:last-child{display:inline-block;}
+
+.link .link3 img:last-child{display:none;}
+.link .link3:hover img:first-child{display:none;}
+.link .link3:hover img:last-child{display:inline-block;}
+
+/* 헤더 */
+#header{
+    width: 1320px;
+    height: 100px;
+    margin: 0 auto;
+}
+.hlogo{
+    float: left;
+    display: block;
+}
+.nav{
+    float: right;
+}
+.nav li{
+    float: left;
+    width: 180px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.nav li a{
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 8px;
+    padding: 10px 0;
+}
+.mar1{
+    margin-right: 280px;
+}
+.nav li a:hover{
+    font-size: 22px;
+    font-weight: 700;
+    color: #1f512c;
+}
+
+/* 메인배너 */
+#community{
+    width: 100%;
+    height: 500px;
+    background: url(images/communitybanner.jpg) no-repeat center top;
+    text-align: center;
+    padding: 240px;
+    box-sizing: border-box;
+}
+.title3 h1{
+    font-family: 'Josefin Sans';
+    font-size: 45px;
+    font-weight: 700;
+    color: #000;
+}
+
+/* 콘텐츠전체 */
+#wrap4{
+    width: 1320px;
+    height: 1719px;
+    margin: 100px auto;
+    text-align: center;
+}
+#wrap4 h1{
+    font-family: 'Josefin Sans';
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+#wrap4 p a{
+    display: inline-block;
+    border: 2px solid #000;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 400;
+/*  탭버튼 호버 시 변환 속성 */
+    transition-property:all; /*속성값*/
+	transition-duration:0.3s; /*효과완료하는 시간*/
+	transition-timing-function:ease-in-out;/*효과의 속도곡선*/
+	transition-delay:0; /*효과의 지연되는 시간*/
+}
+#wrap4 p a:hover{
+    border: 2px solid #fcf2e3;
+    background-color: #fcf2e3;
+    color: #000;
+}
+.mar5{
+    margin-right: 20px;
+}
+.notice{
+    width: 1320px;
+    height: 40px;
+    float: left;
+    margin: 100px 0 10px;
+}
+.notice h6{
+    float: left;
+    margin-left: 5px;
+    font-size: 20px;
+}
+.notice .search{
+    float: right;
+    margin-right: 10px;
+}
+.padding{
+    padding: 5px 10px;
+}
+.table{
+    border-collapse: collapse;
+    border-top: 1px solid #000;
+}
+th{
+    padding: 10px 5px;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 1px solid #000;
+}
+td{
+    padding: 10px 5px;
+    font-size: 20px;
+    font-weight: 300;
+    border-bottom: 1px solid #000;
+}
+td a:hover{
+    font-weight: 500;
+}
+.page{
+    margin-top: 40px;
+}
+.page p{
+    text-decoration: underline;
+}
+
+/* 플래그십스토어안내 */
+#wrap4 h2{
+    font-family: 'Josefin Sans';
+    font-size: 40px;
+    font-weight: 500;
+    margin: 100px 0;
+}
+.store{
+    width: 100%;
+    height: 699px;
+    padding: 0 110px;
+    box-sizing: border-box;
+}
+/* 스토어간판이미지 호버 시 이미지 변경 */
+.map img:last-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateX(180deg);
+    opacity: 0;}
+.map:hover img:first-child{display: none;}
+.map:hover img:last-child{
+    transform: rotateX(0deg);
+    opacity: 1;}
+
+.map{
+    width: 1100px;
+    height: 569px;
+    position: relative;
+}
+.map img{
+    display: block;
+    transition: all 1s;
+}
+.storetext{
+    width: 1100px;
+    height: 130px;
+    background-color: #fcf2e3;
+}
+.storetext p{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 20px;
+}
+
+/* 푸터 */
+#footer{
+    width: 100%;
+    height: 400px;
+    background: #1f512c url(images/Fline.png) no-repeat center top; 
+    padding: 80px 160px 0 160px;
+    box-sizing: border-box;
+}
+.left{
+    float: left;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #fff;
+    margin-right: 420px;
+}
+.flogo{
+    float: left;
+    text-align: center;
+    margin-right: 300px
+}
+.flogo p a{
+    font-size: 18px;
+    color: #fff;
+}
+.flogo p a:hover{
+    font-weight: 600;
+    text-decoration: underline;
+}
+.right{
+    float: right;
+    text-align: right;
+}
+.right h5{
+    font-size: 29px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.right p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #fff;
+}
+.copy{
+    float: left;
+    margin-right: 359px;
+}
+.copy p{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 200;
+    margin-top: 153px;
+}
+.sns{
+    float: left;
+    margin-top: 110px;
+}
+.sns li{
+    float: left;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    text-align: center;
+}
+.sns img{
+    display: inline-block;
+}
+.sns img:hover{
+    width: 60px;
+    height: 60px;
+}
+
+/* 탑버튼 */
+#topbutton{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+}
+/* 탑버튼 호버 시 아이콘 이미지 변경 */
+#topbutton img:last-child{display:none;}
+#topbutton:hover img:first-child{display:none;}
+#topbutton:hover img:last-child{display:inline-block;}
